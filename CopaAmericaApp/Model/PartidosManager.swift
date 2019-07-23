@@ -54,7 +54,7 @@ class PartidosManager{
         partidos[index].flagTeam2 = img
     }
     
-    //cargar lista de places
+    //cargar lista de partidos
     private func loadPartidos()->[Partido] {
         return retrievePartidos() ?? []
     }
@@ -86,7 +86,7 @@ class PartidosManager{
         do {
             print("leyendo bd")
             let rs = try db.executeQuery(
-                "SELECT * FROM places", values: nil)
+                "SELECT * FROM partidos", values: nil)
             while rs.next() {
                 if let partido = Partido(rs: rs) {
                     partidos.append(partido)
@@ -103,11 +103,10 @@ class PartidosManager{
     }
     
     
-    //guardar en la base de datos que es un INOUT  porque modificamos un atributo del argumento que llega a la funcion, para que no sea inmutable el & vuelve el argumento mutable
-    func SQLAddPlace(partido:inout Partido)->Bool {
+    func SQLAddPartido(partido:inout Partido)->Bool {
         guard let db = getOpenDB() else { return false }
         do {
-            try db.executeUpdate("insert into places (id, team1, team2, score, dateMatch, urlFlagTeam1,urlFlagTeam2) values(?, ?, ?, ?, ?, ?,?)", values: [10, partido.team1, partido.team2,partido.score,partido.dateMatch,partido.urlFlagTeam1, partido.urlFlagTeam2]
+            try db.executeUpdate("insert into partidos (id, team1, team2, score, dateMatch, urlFlagTeam1,urlFlagTeam2) values(?, ?, ?, ?, ?, ?,?)", values: [10, partido.team1, partido.team2,partido.score,partido.dateMatch,partido.urlFlagTeam1, partido.urlFlagTeam2]
             )
             
         } catch {
