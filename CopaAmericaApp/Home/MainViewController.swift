@@ -4,7 +4,7 @@ import UIKit
 class MainViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate,URLSessionDelegate {
 
     @IBOutlet var collectionViewMain: UICollectionView!
-    @IBOutlet var floatButtonScanner: UIButton!
+    
     let jsonUrlString = "https://api.myjson.com/bins/gaenp"
     
     var PartidoServices: PartidoServiceProtocol = PartidoService()
@@ -12,7 +12,7 @@ class MainViewController: UIViewController,UICollectionViewDataSource, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        floatButtonScanner.layer.cornerRadius = floatButtonScanner.frame.height/2 
+        
         loadPartidos()
 }
     
