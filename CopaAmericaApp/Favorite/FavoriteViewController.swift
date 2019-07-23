@@ -22,7 +22,7 @@ class FavoriteViewController: UIViewController, UICollectionViewDelegate, UIColl
     func agregarImg() {
         if(partidosManager!.partidoCount>0){
             for index in 0...(partidosManager!.partidoCount - 1){
-                partidosServices.getImagePlace(with: partidosManager!.getPartido(at: index).urlFlagTeam1!) {
+                partidosServices.getImagePartido(with: partidosManager!.getPartido(at: index).urlFlagTeam1!) {
                     (img, error) in
                     if error != nil { // Deal with error here
                         print("error")
@@ -37,7 +37,7 @@ class FavoriteViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
         if(partidosManager!.partidoCount>0){
             for index in 0...(partidosManager!.partidoCount - 1){
-                partidosServices.getImagePlace(with: partidosManager!.getPartido(at: index).urlFlagTeam2!) {
+                partidosServices.getImagePartido(with: partidosManager!.getPartido(at: index).urlFlagTeam2!) {
                     (img, error) in
                     if error != nil { // Deal with error here
                         print("error")

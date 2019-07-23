@@ -7,49 +7,49 @@ class MainViewController: UIViewController,UICollectionViewDataSource, UICollect
     @IBOutlet var floatButtonScanner: UIButton!
     let jsonUrlString = "https://api.myjson.com/bins/gaenp"
     
-    var placesServices:PartidoServiceProtocol = PartidoService()
-    lazy var places:[Partido] = []
+    var PartidoServices: PartidoServiceProtocol = PartidoService()
+    lazy var partidos:[Partido] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         floatButtonScanner.layer.cornerRadius = floatButtonScanner.frame.height/2 
-        loadPlaces()
+        loadPartidos()
 }
     
-    func loadPlaces() {
-        placesServices.getPlace(with: jsonUrlString) {
-            (listPlaces, error) in
+    func loadPartidos() {
+        PartidoServices.getPartido(with: jsonUrlString) {
+            (listPartidos, error) in
             if error != nil { // Deal with error here
                 print("error")
                 return
-            }else if let listPlaces = listPlaces{
+            }else if let listPartidos = listPartidos{
                 //print("=======================================")
                 //print(listPlaces)
-                self.places = listPlaces
+                self.partidos = listPartidos
                 self.agregarImg()
             }
         }
     }
     
     func agregarImg() {
-        for index in 0...(places.count-1){
-            placesServices.getImagePlace(with: places[index].urlFlagTeam1!) {
+        for index in 0...(partidos.count-1){
+            PartidoServices.getImagePartido(with: partidos[index].urlFlagTeam1!) {
                 (img, error) in
                 if error != nil { // Deal with error here
                     print("error")
                     return
                 }else if let img = img{
-                    self.places[index].flagTeam1 = img
+                    self.partidos[index].flagTeam1 = img
                 }
                //self.collectionViewMain.reloadData()
             }
-            placesServices.getImagePlace(with: places[index].urlFlagTeam2!) {
+            PartidoServices.getImagePartido(with: partidos[index].urlFlagTeam2!) {
                 (img, error) in
                 if error != nil { // Deal with error here
                     print("error")
                     return
                 }else if let img = img{
-                    self.places[index].flagTeam2 = img
+                    self.partidos[index].flagTeam2 = img
                 }
                 self.collectionViewMain.reloadData()
             }
@@ -60,17 +60,17 @@ class MainViewController: UIViewController,UICollectionViewDataSource, UICollect
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return places.count
+        return partidos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionViewMain.dequeueReusableCell(withReuseIdentifier: "celdaMain", for: indexPath) as! MainCollectionViewCell
-        cell.team1.text = places[indexPath.item].team1
-        cell.team2.text = places[indexPath.item].team2
-        cell.score.text = places[indexPath.item].score
-        cell.imgTeam1.image = places[indexPath.item].flagTeam1
-        cell.imgTeam2.image = places[indexPath.item].flagTeam2
-        print("para cada imagen",places[indexPath.item].flagTeam1)
+        cell.team1.text = partidos[indexPath.item].team1
+        cell.team2.text = partidos[indexPath.item].team2
+        cell.score.text = partidos[indexPath.item].score
+        cell.imgTeam1.image = partidos[indexPath.item].flagTeam1
+        cell.imgTeam2.image = partidos[indexPath.item].flagTeam2
+        print("para cada imagen",partidos[indexPath.item].flagTeam1)
         return cell
     }
     

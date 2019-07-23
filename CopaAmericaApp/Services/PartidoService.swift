@@ -19,7 +19,7 @@ class PartidoService:NSObject,URLSessionDelegate,PartidoServiceProtocol{
     }()
     
     
-    func getPlace(with urlServer: String,completionHandler: @escaping ([Partido]?, Error?) -> Void){
+    func getPartido(with urlServer: String,completionHandler: @escaping ([Partido]?, Error?) -> Void){
         guard let url = URL(string: urlServer)else {return}
         let dataTask = session.dataTask(with: url) {(data, response, error) in
             if let error = error {
@@ -54,17 +54,17 @@ class PartidoService:NSObject,URLSessionDelegate,PartidoServiceProtocol{
     
     
     func recorreJson(lista:[[String:Any]],url:String,completionHandler: @escaping ([Partido]?,Error?) -> Void){
-        var misplaces:[Partido] = []
+        var mispartidos:[Partido] = []
         for item in lista{
-            var placeFind = Partido.init(json: item, urlJson: url)
+            var partidoFind = Partido.init(json: item, urlJson: url)
             //placeFind.image = loadCover(urlImage: placeFind.urlImage!)
-            misplaces.append(placeFind)
+            mispartidos.append(partidoFind)
         }
-        completionHandler(misplaces,nil)
+        completionHandler(mispartidos,nil)
     }
     
     
-    func  getImagePlace(with urlServer: String,completionHandler: @escaping (UIImage?, Error?) -> Void){
+    func  getImagePartido(with urlServer: String,completionHandler: @escaping (UIImage?, Error?) -> Void){
         guard let url = URL(string: urlServer) else {
             print("no funciona la url")
             return}
@@ -94,12 +94,12 @@ class PartidoService:NSObject,URLSessionDelegate,PartidoServiceProtocol{
 
 
 protocol PartidoServiceProtocol {
-    func getPlace(with urlServer: String,
+    func getPartido(with urlServer: String,
                   completionHandler: @escaping ([Partido]?, Error?) -> Void)
     
     func cancel()
     
-    func getImagePlace(with urlServer: String,
+    func getImagePartido(with urlServer: String,
                        completionHandler: @escaping (UIImage?, Error?) -> Void)
 }
 
