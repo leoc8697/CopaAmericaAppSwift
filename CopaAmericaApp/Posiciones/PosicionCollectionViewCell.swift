@@ -1,10 +1,3 @@
-//
-//  PosicionCollectionViewCell.swift
-//  TurismoApp
-//
-//  Created by Victor Manuel Murillo on 23/07/19.
-//  Copyright © 2019 Victor Manuel Murillo. All rights reserved.
-//
 
 import UIKit
 

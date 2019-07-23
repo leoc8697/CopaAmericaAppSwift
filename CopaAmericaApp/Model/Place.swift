@@ -1,10 +1,3 @@
-//
-//  Place.swift
-//  TurismoApp
-//
-//  Created by Victor Manuel Murillo on 28/02/19.
-//  Copyright © 2019 Victor Manuel Murillo. All rights reserved.
-//
 
 import UIKit
 internal struct Key {
@@ -25,7 +18,7 @@ struct Place{
     var urlImage:String?
     
     init(id:Int? = nil,name:String,description:String,image:UIImage?,geo:String, state:Int) {
-        self.id = id ?? 0
+        self.id = id ?? 0 
         self.name = name
         self.description = description
         self.image = image!
@@ -51,7 +44,7 @@ struct Place{
             let description = rs.string(forColumn: Key.description),
             let url = rs.string(forColumn: Key.image),
             let geo = rs.string(forColumn: Key.geo)
-        else { return nil }
+            else { return nil }
         self.init(id: Int(id), name: name, description: description, image: image, geo: geo, state: Int(state),urlImage:url)
     }
     
