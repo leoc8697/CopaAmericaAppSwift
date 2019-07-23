@@ -68,7 +68,7 @@ class PartidoService:NSObject,URLSessionDelegate,PartidoServiceProtocol{
         guard let url = URL(string: urlServer) else {
             print("no funciona la url")
             return}
-        var img:UIImage = UIImage(imageLiteralResourceName: "morro")
+        var img:UIImage = UIImage(imageLiteralResourceName: "FavIcon")
         let task = session.downloadTask(with: url) { (tempURL, response, error) in
             if let tempURL = tempURL,
                 let data = try? Data(contentsOf: tempURL),

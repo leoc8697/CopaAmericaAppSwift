@@ -46,7 +46,7 @@ struct Place{
         
         let id = rs.int(forColumn: "id")
         let state = rs.int(forColumn: Key.state)
-        let image = UIImage(imageLiteralResourceName: "imgDefault")
+        let image = UIImage(imageLiteralResourceName: "FavIcon")
         guard let name = rs.string(forColumn: Key.name),
             let description = rs.string(forColumn: Key.description),
             let url = rs.string(forColumn: Key.image),
@@ -60,7 +60,7 @@ struct Place{
         //self.id = Int(self.id)
         self.name = json["name"] as? String ?? "Anonimo"
         self.description = json["description"] as? String ?? "Anonima"
-        self.image = UIImage(imageLiteralResourceName: "imgDefault")
+        self.image = UIImage(imageLiteralResourceName: "FavIcon")
         let urlCompleta = json["img"] as? String ?? ""
         self.urlImage =  urlJson + urlCompleta //
         self.geo = json["cord"] as? String ?? ""

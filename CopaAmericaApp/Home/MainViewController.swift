@@ -24,7 +24,7 @@ class MainViewController: UIViewController,UICollectionViewDataSource, UICollect
                 return
             }else if let listPartidos = listPartidos{
                 //print("=======================================")
-                //print(listPlaces)
+                //print(listPartidos)
                 self.partidos = listPartidos
                 self.agregarImg()
             }
@@ -68,6 +68,7 @@ class MainViewController: UIViewController,UICollectionViewDataSource, UICollect
         cell.team1.text = partidos[indexPath.item].team1
         cell.team2.text = partidos[indexPath.item].team2
         cell.score.text = partidos[indexPath.item].score
+        cell.dateMatch.text = partidos[indexPath.item].dateMatch
         cell.imgTeam1.image = partidos[indexPath.item].flagTeam1
         cell.imgTeam2.image = partidos[indexPath.item].flagTeam2
         print("para cada imagen",partidos[indexPath.item].flagTeam1)

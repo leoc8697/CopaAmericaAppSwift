@@ -150,10 +150,10 @@ struct Posicion{
         self.urlImgPos2 = json["imgPos2"] as? String ?? "Anonimo"
         self.urlImgPos3 = json["imgPos3"] as? String ?? "Anonimo"
         self.urlImgPos4 = json["imgPos4"] as? String ?? "Anonimo"
-        self.imgPos1 = UIImage(imageLiteralResourceName: "imgDefault")
-        self.imgPos2 = UIImage(imageLiteralResourceName: "imgDefault")
-        self.imgPos3 = UIImage(imageLiteralResourceName: "imgDefault")
-        self.imgPos4 = UIImage(imageLiteralResourceName: "imgDefault")
+        self.imgPos1 = UIImage(imageLiteralResourceName: "FavIcon")
+        self.imgPos2 = UIImage(imageLiteralResourceName: "FavIcon")
+        self.imgPos3 = UIImage(imageLiteralResourceName: "FavIcon")
+        self.imgPos4 = UIImage(imageLiteralResourceName: "FavIcon")
         
        
     

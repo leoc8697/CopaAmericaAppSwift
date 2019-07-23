@@ -50,7 +50,7 @@ struct Partido{
         let dateMatch = rs.string(forColumn: estructura.dateMatch)
         let urlFlagTeam1 = rs.string(forColumn: estructura.urlFlagTeam1)
         let urlFlagTeam2 = rs.string(forColumn: estructura.urlFlagTeam2)
-        let image = UIImage(imageLiteralResourceName: "imgDefault")
+        let image = UIImage(imageLiteralResourceName: "FavIcon")
         self.init(team1: team1!, team2: team2!, score: score!, dateMatch: dateMatch!, flagTeam1: image, flagTeam2: image, urlFlagTeam1: urlFlagTeam1!, urlFlagTeam2: urlFlagTeam2!)
       
     }
@@ -61,8 +61,8 @@ struct Partido{
         self.team2 = json["team2"] as? String ?? "Equipo 2"
         self.score = json["score"] as? String ?? "Resultado"
         self.dateMatch = json["dateMatch"] as? String ?? "Fecha"
-        self.flagTeam1 = UIImage(imageLiteralResourceName: "imgDefault")
-        self.flagTeam2 = UIImage(imageLiteralResourceName: "imgDefault")
+        self.flagTeam1 = UIImage(imageLiteralResourceName: "FavIcon")
+        self.flagTeam2 = UIImage(imageLiteralResourceName: "FavIcon")
         self.urlFlagTeam1 = json["flagTeam1"] as? String ?? "www"
         self.urlFlagTeam2 = json["flagTeam2"] as? String ?? "www"
     }

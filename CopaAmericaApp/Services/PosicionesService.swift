@@ -48,13 +48,13 @@ class PosicionesService: NSObject,URLSessionDelegate,PosicionesServiceProtocol{
     
     
     func recorreJson(lista:[[String:Any]],url:String,completionHandler: @escaping ([Posicion]?,Error?) -> Void){
-        var misplaces:[Posicion] = []
+        var misposiciones:[Posicion] = []
         for item in lista{
             var posicionFind = Posicion.init(json: item, urlJson: url)
             //placeFind.image = loadCover(urlImage: placeFind.urlImage!)
-            misplaces.append(posicionFind)
+            misposiciones.append(posicionFind)
         }
-        completionHandler(misplaces,nil)
+        completionHandler(misposiciones,nil)
     }
     
     
@@ -62,7 +62,7 @@ class PosicionesService: NSObject,URLSessionDelegate,PosicionesServiceProtocol{
         guard let url = URL(string: urlServer) else {
             print("no funciona la url")
             return}
-        var img:UIImage = UIImage(imageLiteralResourceName: "morro")
+        var img:UIImage = UIImage(imageLiteralResourceName: "FavIcon")
         let task = session.downloadTask(with: url) { (tempURL, response, error) in
             if let tempURL = tempURL,
                 let data = try? Data(contentsOf: tempURL),
@@ -77,14 +77,7 @@ class PosicionesService: NSObject,URLSessionDelegate,PosicionesServiceProtocol{
     }
     
     
-    
-    
-    
-    
-    
 }
-
-
 
 
 protocol PosicionesServiceProtocol {

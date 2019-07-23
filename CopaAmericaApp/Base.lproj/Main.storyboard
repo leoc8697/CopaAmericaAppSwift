@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zZT-G5-zKA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zZT-G5-zKA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,16 +34,16 @@
             </objects>
             <point key="canvasLocation" x="-10" y="379"/>
         </scene>
-        <!--Item-->
+        <!--Posiciones-->
         <scene sceneID="zf0-ke-WMY">
             <objects>
-                <viewController id="fEu-pc-vbI" customClass="PosicionesViewController" customModule="TurismoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fEu-pc-vbI" customClass="PosicionesViewController" customModule="CopaAmericaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Rv-Eq-Syh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="POSICIONES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZO-qr-hyG">
-                                <rect key="frame" x="138" y="45" width="99" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Posiciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZO-qr-hyG">
+                                <rect key="frame" x="138" y="45" width="83" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -54,17 +54,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GIt-jm-LTO">
-                                    <size key="itemSize" width="378" height="289"/>
+                                    <size key="itemSize" width="378" height="279"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellPosicion" id="Vam-84-TPQ" customClass="PosicionCollectionViewCell" customModule="TurismoApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="378" height="289"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellPosicion" id="Vam-84-TPQ" customClass="PosicionCollectionViewCell" customModule="CopaAmericaApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="279"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="378" height="289"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="378" height="279"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grupo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qJ-Jn-c4E">
@@ -338,7 +338,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LvA-tr-41t"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="sCN-ka-wNY"/>
+                    <tabBarItem key="tabBarItem" title="Posiciones" image="PosIcon" id="sCN-ka-wNY" userLabel="Posiciones"/>
                     <connections>
                         <outlet property="collectionPosiciones" destination="rv5-at-xl7" id="cu4-jN-ofU"/>
                     </connections>
@@ -347,11 +347,11 @@
             </objects>
             <point key="canvasLocation" x="1274.4000000000001" y="823.53823088455783"/>
         </scene>
-        <!--Posiciones-->
+        <!--Favoritos-->
         <scene sceneID="4Zi-kS-V42">
             <objects>
-                <viewController id="V8M-aM-loq" customClass="FavoriteViewController" customModule="TurismoApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zpx-qu-qtL">
+                <viewController id="V8M-aM-loq" customClass="FavoriteViewController" customModule="CopaAmericaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zpx-qu-qtL" userLabel="Favoritos">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -359,50 +359,50 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r9K-g1-OMe">
-                                    <size key="itemSize" width="375" height="178"/>
+                                    <size key="itemSize" width="375" height="89"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellFavorite" id="YyC-hg-xnF" customClass="FavoriteCell" customModule="TurismoApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellFavorite" id="YyC-hg-xnF" customClass="FavoriteCell" customModule="CopaAmericaApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoH-0m-NKE" userLabel="team1">
-                                                    <rect key="frame" x="26" y="111" width="103" height="21"/>
+                                                    <rect key="frame" x="75" y="50" width="78" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI5-C3-zWE" userLabel="dateMatch">
-                                                    <rect key="frame" x="3" y="141" width="370" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2H-VE-1s3" userLabel="team2">
-                                                    <rect key="frame" x="247" y="115" width="98" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI5-C3-zWE" userLabel="dateMatch">
+                                                    <rect key="frame" x="20" y="15" width="355" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9Z-Fe-AOU" userLabel="flagTeam1">
-                                                    <rect key="frame" x="29" y="7" width="100" height="100"/>
+                                                    <rect key="frame" x="20" y="38" width="48" height="46"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j0R-0L-wjQ" userLabel="flagTeam2">
-                                                    <rect key="frame" x="245" y="7" width="100" height="100"/>
+                                                    <rect key="frame" x="305" y="38" width="48" height="46"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUj-FG-CJx" userLabel="score">
-                                                    <rect key="frame" x="147" y="44" width="80" height="21"/>
+                                                    <rect key="frame" x="161" y="50" width="56" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2H-VE-1s3" userLabel="team2">
+                                                    <rect key="frame" x="225" y="49" width="77" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -436,7 +436,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mah-Fb-H3K"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Posiciones" id="e3V-tW-yUx"/>
+                    <navigationItem key="navigationItem" title="Favoritos" id="e3V-tW-yUx"/>
                     <connections>
                         <outlet property="collectionViewFavorite" destination="3cH-Dm-qpr" id="pTs-aS-vVv"/>
                     </connections>
@@ -445,11 +445,11 @@
             </objects>
             <point key="canvasLocation" x="1636" y="1691.6041979010497"/>
         </scene>
-        <!--Home-->
+        <!--Partidos-->
         <scene sceneID="v6X-iH-SsG">
             <objects>
-                <viewController id="fDb-ai-vtb" customClass="MainViewController" customModule="TurismoApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ate-TT-V3D">
+                <viewController id="fDb-ai-vtb" customClass="MainViewController" customModule="CopaAmericaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ate-TT-V3D" userLabel="Partidos">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -458,17 +458,17 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="8" right="1"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="3" sectionInsetReference="safeArea" id="9Dn-tW-ea3">
-                                    <size key="itemSize" width="375" height="136"/>
+                                    <size key="itemSize" width="375" height="85"/>
                                     <size key="headerReferenceSize" width="0.0" height="6"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="celdaMain" id="NWY-J6-9Ps" customClass="MainCollectionViewCell" customModule="TurismoApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="6" width="375" height="136"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="celdaMain" id="NWY-J6-9Ps" customClass="MainCollectionViewCell" customModule="CopaAmericaApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="6" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ish-Tw-ILm">
@@ -476,40 +476,48 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4i-7N-GQe" userLabel="team1">
-                                                            <rect key="frame" x="-19" y="104" width="177" height="24"/>
+                                                            <rect key="frame" x="69" y="37" width="87" height="24"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4P-NT-S2i" userLabel="imgTeam1">
-                                                            <rect key="frame" x="16" y="4" width="100" height="100"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4e0-0c-6FY">
-                                                            <rect key="frame" x="260" y="5" width="100" height="100"/>
+                                                            <rect key="frame" x="16" y="29" width="45" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47g-8l-aYG" userLabel="team2">
-                                                            <rect key="frame" x="222" y="104" width="177" height="25"/>
+                                                            <rect key="frame" x="225" y="36" width="80" height="25"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrT-iE-CBa" userLabel="score">
-                                                            <rect key="frame" x="122" y="41" width="130" height="28"/>
+                                                            <rect key="frame" x="152" y="35" width="70" height="28"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJN-y1-XXW" userLabel="dateMatch">
+                                                            <rect key="frame" x="16" y="0.0" width="279" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4e0-0c-6FY">
+                                                            <rect key="frame" x="313" y="29" width="47" height="39"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
                                             </subviews>
                                         </view>
                                         <connections>
+                                            <outlet property="dateMatch" destination="aJN-y1-XXW" id="KNI-LO-RMp"/>
                                             <outlet property="imgTeam1" destination="a4P-NT-S2i" id="10o-za-alj"/>
                                             <outlet property="imgTeam2" destination="4e0-0c-6FY" id="hx8-QB-vEb"/>
                                             <outlet property="score" destination="PrT-iE-CBa" id="HTw-St-iSx"/>
@@ -553,7 +561,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d0M-TV-sSt"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="egZ-v1-rCJ"/>
+                    <navigationItem key="navigationItem" title="Partidos" id="egZ-v1-rCJ" userLabel="Partidos"/>
                     <connections>
                         <outlet property="collectionViewMain" destination="zfV-YE-hdv" id="fLo-vk-JWz"/>
                         <outlet property="floatButtonScanner" destination="jqy-IV-dA3" id="QTm-HQ-X3V"/>
@@ -561,14 +569,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhf-9A-kSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2140" y="91"/>
+            <point key="canvasLocation" x="2140" y="90.404797601199405"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Favoritos-->
         <scene sceneID="oh7-dv-AXn">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ugx-Zk-Bae" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="8o3-iw-ocX">
-                        <color key="badgeColor" red="1" green="0.14438365980000001" blue="0.1656754694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <navigationController hidesBarsOnTap="YES" id="ugx-Zk-Bae" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favoritos" image="FavIcon" id="8o3-iw-ocX">
+                        <color key="badgeColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -585,11 +593,11 @@
             </objects>
             <point key="canvasLocation" x="422" y="1692"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Partidos-->
         <scene sceneID="0Xt-nh-Qhh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EdK-gu-z4d" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="more" id="Ef9-k3-Vwh"/>
+                    <tabBarItem key="tabBarItem" title="Partidos" image="PartidoIcon" id="Ef9-k3-Vwh" userLabel="Partidos"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yE4-Qa-h2k">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -605,4 +613,9 @@
             <point key="canvasLocation" x="1255.2" y="91.304347826086968"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FavIcon" width="29" height="29"/>
+        <image name="PartidoIcon" width="29" height="29"/>
+        <image name="PosIcon" width="29" height="29"/>
+    </resources>
 </document>
